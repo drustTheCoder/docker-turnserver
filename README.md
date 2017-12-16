@@ -6,7 +6,7 @@ A Docker container with the Coturn STUN and TURN server (https://github.com/cotu
 This is currently running v4.5.0.7.
 
 ```
-docker run -d --name=turnserver --restart="on-failure:10" --net=host -p 3478:3478 -p 3478:3478/udp bprodoehl/turnserver
+docker run -d --name=turnserver --restart="on-failure:10" --net=host -p 3478:3478 -p 3478:3478/udp drustTheCoder/docker-turnserver
 ```
 
 This will use icanhazip (http://major.io/icanhazip-com-faq/) to determine your container's public IP address. If you don't wish to use icanhazip, or you wish to use an external IP address that doesn't match what icanhazip would see, you can specify it in the environment:
